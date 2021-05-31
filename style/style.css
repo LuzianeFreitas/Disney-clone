@@ -1,0 +1,42 @@
+/* Configurações padrões */
+:root {
+    --vermelho: #E50914;
+    --preta: #141414;
+    --nav: #aaa;
+    --nav-hover: #fff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Bebas Neue', cursive;
+    text-decoration: none;
+}
+
+body {
+    background: var(--preta);
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo {
+    color: var(--vermelho);
+    font-weight: bolder;
+    font-size: 3.3rem;
+    margin-left: 1.2rem;
+}
+
+header nav a {
+    color: var(--nav);
+    margin-right: 10px;
+}
+
+header nav a:hover {
+    color: var(--nav-hover);
+}
+
