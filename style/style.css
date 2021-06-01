@@ -1,9 +1,7 @@
 /* Configurações Gerais */
 :root {
-    --principal: rgb(197, 197, 197);
-    --principal-hover: #fff;
-    --preta: #141414;
-    --border-card: #533e23;
+    --principal: #fff;
+    --preta: rgba(17, 24, 39, 1);
 }
 
 * {
@@ -47,21 +45,44 @@ header nav a {
     text-transform: uppercase;
 }
 
-header nav a:hover {
-    color: var(--principal-hover);
+/* Configurações main */
+main .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-/* Configurações main */
-main .main-movie img {
-    /* display: flex;
-    align-items: center;
-    justify-content: center; */
+.item {
+    background: url("../img/capa-cruela-1.png") no-repeat;
+    height: 350px;
+    width: 82%;
+    background-size: cover;
 
-    width: 85%;
-    height: 25rem;
+    transition: all .3s;
+}
 
-    border: 1px solid var(--border-card);
-    border-radius: 5px;
+.item:hover {
+    border: 4px solid var(--principal);
+    border-radius: 4px;
+}
 
-    /* margin-left: 80px; */
+.description-movie {
+    display: flex;
+    flex-direction: column;
+}
+
+.description-movie img {
+    width: 25%;
+    transform: rotate(-15deg);
+
+    margin-top: 2rem;
+    margin-left: 2rem;
+}
+
+.description-movie h2 {
+    margin-left: 3rem;
+    margin-top: 4rem;
+
+    font-size: 20px;
+    width: 25%;
 }
