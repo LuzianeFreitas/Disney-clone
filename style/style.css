@@ -1,7 +1,7 @@
 /* Configurações Gerais */
 :root {
     --principal: #fff;
-    --preta: rgba(17, 24, 39, 1);
+    --backgroud-disney: rgba(17, 24, 39, 1);
 }
 
 * {
@@ -14,7 +14,7 @@
 /* Configurações base */
 body {
     font-family: 'Roboto', sans-serif;
-    background: var(--preta);
+    background: var(--backgroud-disney);
     color: #fff;
 }
 
@@ -23,26 +23,64 @@ header .container {
     align-items: center;
     justify-content: space-between;
 
-    margin-top: 1.1rem;
-    margin-bottom: 1.1rem;
+    margin-top: 0.9em;
+    margin-bottom: 2em;
 }
 
-header .logo {
-    width: 100px;
-    margin-left: 1.2rem;
+header nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
-header .login {
-    width: 45px;
-    margin: 0;
-    margin-right: 1rem;
-    border-radius: 50%;
+header nav .logo {
+    width: 75px;
+    margin-left: 2em;
+}
+
+header nav i {
+    margin-left: 3em;
+    margin-right: 0.6em;
 }
 
 header nav a {
     color: var(--principal);
     margin-right: 10px;
     text-transform: uppercase;
+    position: relative;
+}
+
+header nav a.estilo::before {
+    content: "";
+    border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+
+    height: 0.2em;
+    width: 100%;
+
+    background-color: var(--principal);
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+header nav a.estilo:hover::before {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+
+header .login {
+    border: 1px solid white;
+    width: 45px;
+    margin: 0;
+    margin-right: 1em;
+    border-radius: 50%;
 }
 
 /* Configurações main */
@@ -75,13 +113,13 @@ main .container {
     width: 25%;
     transform: rotate(-15deg);
 
-    margin-top: 2rem;
-    margin-left: 2rem;
+    margin-top: 2em;
+    margin-left: 2em;
 }
 
 .description-movie h2 {
-    margin-left: 3rem;
-    margin-top: 4rem;
+    margin-left: 3em;
+    margin-top: 4em;
 
     font-size: 20px;
     width: 25%;
