@@ -51,3 +51,33 @@ header nav a.estilo:hover::before {
 - As propriedades ```transform: scaleX(1);``` e ```transform-origin:0 100% 0;``` dão o efeito da barra deslizar da esquerda para a direita! Você pode ver alguns exemplos
 [aqui](https://codepen.io/vineethtrv/pen/XKKEgM) !
 - Utilizado Vendor Prefixes ```-webkit``` pode ser estudado pelo [link](https://developer.mozilla.org/pt-BR/docs/Glossary/Vendor_Prefix) .
+
+
+<h3> 📌 Carousel principal versão inicial </h3>
+
+<p align="center">
+<img alt="App Demo carrousel" src="https://j.gifs.com/K8rMgY.gif">
+</p>
+
+<h4> 📝 Conhecimentos adquiridos: </h4>
+
+- Utilizado o [slick](https://kenwheeler.github.io/slick/) para criar o carousel aplicando jquery.
+<pre><code>
+$(document).ready(function(){
+  $('.main-carousel').slick({
+    dots: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 4000,
+  });
+});
+</code></pre>
+
+<h4> 📍 Melhorias </h4>
+
+- [ ] Alterar background de acordo com o filme;
+- [ ] Adicionar efeito hover ao passar o mouse sobre o card;
+- [ ] Adicionar setas para rolar manualmente;
+- [ ] Adicionar animação no nome do filme mostrado do lado esquerdo.
+
