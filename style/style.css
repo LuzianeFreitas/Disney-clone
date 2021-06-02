@@ -27,10 +27,12 @@ header .container {
     margin-bottom: 2em;
 }
 
-header nav {
+header nav ul {
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    list-style: none;
 }
 
 header nav .logo {
@@ -56,7 +58,8 @@ header nav a.estilo::before {
     border-bottom-left-radius: 4px;
     position: absolute;
     left: 0;
-    bottom: 0;
+    bottom: -0.4em;
+    
 
     height: 0.2em;
     width: 100%;
