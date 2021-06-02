@@ -1,21 +1,24 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./img/icon-d-1.png" type="image/x-icon">
+    <!-- Slick para o carousel -->
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick-theme.css">
+
     <link rel="stylesheet" href="./style/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;1,100;1,300&display=swap" rel="stylesheet">
-    
-    <!-- owl css -->
-    <link rel="stylesheet" href="style/owl/owl.carousel.min.css">
-    <link rel="stylesheet" href="style/owl/owl.theme.default.min.css">
-
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;1,100;1,300&display=swap"
+        rel="stylesheet">
 
     <title>Disney+ | Movies and Series</title>
 </head>
+
 <body>
     <!-- Semantico!!!!!!!!!!!! -->
     <header>
@@ -49,28 +52,45 @@
                         <i class="fas fa-tv"></i>
                         <a href="#" class="estilo">Series</a>
                     </li>
-                </ul>           
+                </ul>
             </nav>
             <img src="./img/perfil-disney.jpg" alt="login" class="login">
         </div>
     </header>
     <main>
-        <div class="container">
+        <article class="main-carousel">
             <div class="item">
-                <div class="description-movie">
-                    <img src="./img/cruella__2021__live_action_logo_png__by_mintmovi3_deb3ncx-fullview.png" alt="Cruela logo">
+                <div class="info-movie">
+                    <img src="./img/cruella__2021__live_action_logo_png__by_mintmovi3_deb3ncx-fullview.png"
+                        alt="Cruela logo">
                     <h2>Já disponível com Premier Acces</h2>
                 </div>
-            </div>           
-        </div>
+            </div>
+
+            <div class="item">
+                <div class="info-movie">
+                    <img src="./img/the-little-princes-live-action-logo.png" alt="Cruela logo">
+                    <!-- <h2>Já disponível com Premier Acces</h2> -->
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="info-movie">
+                    <img src="./img/the-little-princes-live-action-logo.png" alt="Cruela logo">
+                    <!-- <h2>Já disponível com Premier Acces</h2> -->
+                </div>
+            </div>
+
+        </article>
+
     </main>
 
-
-    <!-- owl scripts -->
-    <script src="js/owl/jquery.min.js"></script>
-    <script src="js/owl/owl.carousel.min.js"></script>
-    <script src="js/main.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick.js"></script>
     <script src="https://kit.fontawesome.com/340b8b3293.js" crossorigin="anonymous"></script>
-    
+    <script src="js/main.js"></script>
+
 </body>
+
 </html>
