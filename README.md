@@ -48,5 +48,6 @@ header nav a.estilo:hover::before {
 }
 </code></pre>
 
-- As propriedades ```transform: scaleX(1);``` e ```transform-origin:0 100% 0;``` dão o efeito da barra deslizar da esquerda para a direita!
+- As propriedades ```transform: scaleX(1);``` e ```transform-origin:0 100% 0;``` dão o efeito da barra deslizar da esquerda para a direita! Você pode ver alguns exemplos
+[aqui](https://codepen.io/vineethtrv/pen/XKKEgM) !
 - Utilizado Vendor Prefixes ```-webkit``` pode ser estudado pelo [link](https://developer.mozilla.org/pt-BR/docs/Glossary/Vendor_Prefix) .
