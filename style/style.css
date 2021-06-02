@@ -66,16 +66,21 @@ header nav a.estilo::before {
 
     background-color: var(--principal);
     visibility: hidden;
+    
     -webkit-transform: scaleX(0);
     transform: scaleX(0);
+    transform-origin:0 100% 0;
+
     -webkit-transition: all 0.3s ease-in-out 0s;
     transition: all 0.3s ease-in-out 0s;
 }
 
 header nav a.estilo:hover::before {
     visibility: visible;
+    
     -webkit-transform: scaleX(1);
     transform: scaleX(1);
+    transform-origin:0 100% 0;
 
 }
 
