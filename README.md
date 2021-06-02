@@ -74,10 +74,14 @@ $(document).ready(function(){
 });
 </code></pre>
 
+- Utilizado ```box-shadow``` para criar o efeito hover ao passar o mouse sobre o card
+<code>
+box-shadow: inset 0 0 0 4px var(--secondary);
+</code>
 <h4> 📍 Melhorias </h4>
 
+- [x] Adicionar efeito hover ao passar o mouse sobre o card;
 - [ ] Alterar background de acordo com o filme;
-- [ ] Adicionar efeito hover ao passar o mouse sobre o card;
 - [ ] Adicionar setas para rolar manualmente;
 - [ ] Adicionar animação no nome do filme mostrado do lado esquerdo.
 
