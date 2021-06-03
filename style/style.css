@@ -2,6 +2,7 @@
 :root {
     --principal: #fff;
     --secondary: rgb(161, 160, 158);
+    --border-cards: rgb(72, 73, 87);
     --backgroud-disney: rgba(17, 24, 39, 1);
 }
 
@@ -19,7 +20,8 @@ body {
     color: #fff;
 
     /* Retirar scroll criado na horizontal do body quando adiciona o carousel */
-    overflow: hidden;
+    /* overflow: hidden; */
+    overflow-x: hidden;
 }
 
 header .container {
@@ -182,6 +184,65 @@ main article .item h2 {
 .slick-dots li.slick-active button {
     background-color: var(--principal);
 }
+
+/* Todos canais dentro da disney */
+
+main article.canais {    
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 3rem;
+}
+
+main article.canais .canais-disney {
+    border: 3px solid var(--border-cards);
+    border-radius: 15px;
+    height: 120px;
+    width: 210px;
+
+    background-image:  linear-gradient(rgb(58, 60, 74), rgb(36, 38, 50));
+
+    -webkit-transition: -webkit-transform .5s ease;
+    transition: transform .5s ease;
+}
+
+main article.canais .canais-disney img {
+    height: 120px;
+    width: 210px;
+}
+
+main article.canais .canais-disney:hover {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    border-color: #fff;
+    cursor: pointer;
+}
+
+main article.canais .disney:hover {
+    background-image: url('../img/1564674844-disney.gif');
+    background-size: cover;
+}
+
+main article.canais .pixar:hover {
+    background-image: url('../img/1564676714-pixar.gif');
+    background-size: cover;
+}
+
+main article.canais .marvel:hover {
+    background-image: url('../img/1564676115-marvel.gif');
+    background-size: cover;
+}
+main article.canais .star-wars:hover {
+    background-image: url('../img/1608229455-star-wars.gif');
+    background-size: cover;
+}
+main article.canais .n-g:hover {
+    background-image: url('../img/1564676296-national-geographic.gif');
+    background-size: cover;
+}
+
 
 
 
