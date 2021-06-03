@@ -243,6 +243,49 @@ main article.canais .n-g:hover {
     background-size: cover;
 }
 
+/* Collections */
+
+.colections-disney {
+    border: 1px solid red;
+
+    margin: 1rem 3rem 1rem 3rem;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.colections-disney h2 {
+    margin-bottom: 0.6rem;
+
+    font-weight: bolder;
+}
+
+.colection-carousel {
+    padding-bottom: 1.5rem;
+}
+
+.movies-colections {
+    border:1px solid red;
+    height: 120px;
+    width: 210px;
+    -webkit-transition: -webkit-transform .5s ease;
+    transition: transform .5s ease;
+}
+
+.movies-colections:hover {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    border: 2px solid #fff;
+    cursor: pointer;
+}
+
+.movies-colections img {
+    height: 120px;
+    width: 210px;
+
+    border-radius: 4px;
+}
+
 
 
 
