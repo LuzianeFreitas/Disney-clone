@@ -52,6 +52,9 @@ header nav a.estilo:hover::before {
 [aqui](https://codepen.io/vineethtrv/pen/XKKEgM) !
 - Utilizado Vendor Prefixes ```-webkit``` pode ser estudado pelo [link](https://developer.mozilla.org/pt-BR/docs/Glossary/Vendor_Prefix) .
 
+<h4> 📍 Melhorias </h4>
+
+- [ ] Adicionar menu vertical do lado direito sobre o perfil.
 
 <h3> 📌 Carousel principal versão inicial </h3>
 
@@ -85,3 +88,12 @@ box-shadow: inset 0 0 0 4px var(--secondary);
 - [ ] Adicionar setas para rolar manualmente;
 - [ ] Adicionar animação no nome do filme mostrado do lado esquerdo.
 
+<h3> 📌 Menu disney versão final </h3>
+
+<p align="center">
+<img alt="App Demo carrousel" src="https://j.gifs.com/Y76p0p.gif">
+</p>
+
+<h4> 📝 Conhecimentos adquiridos: </h4>
+
+- Utilizar a animação com a propriedade ```background-image``` para que ao passar o mouse sobre os cards seja mostrado um video no fundo de acordo com cada canal.
