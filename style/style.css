@@ -110,11 +110,23 @@ main article .item {
 
     padding: 1em;
 
-    background: url('../img/capa-cruela-1.png') no-repeat;
-    background-size: cover;
-
     transition: 0.4s;
 }
+
+main article .item-1 {
+    background: url('../img/capa-cruela-1.png') no-repeat;
+    background-size: cover;
+}
+
+main article .item-2 {
+    background: url('../img/capa-the-little-princes.png') no-repeat;
+    background-size: cover;
+}
+
+/* main article .item-3 {
+    background: url('../img/capa-the-little-princes.png') no-repeat;
+    background-size: cover;
+} */
 
 main article .item:hover {
     box-shadow: inset 0 0 0 4px var(--secondary);
@@ -246,7 +258,7 @@ main article.canais .n-g:hover {
 /* Collections */
 
 .colections-disney {
-    border: 1px solid red;
+    /* border: 1px solid red; */
 
     margin: 1rem 3rem 1rem 3rem;
 
@@ -265,17 +277,21 @@ main article.canais .n-g:hover {
 }
 
 .movies-colections {
-    border:1px solid red;
-    height: 120px;
+    /* border:1px solid red; */
+    height: 160px;
     width: 210px;
     -webkit-transition: -webkit-transform .5s ease;
     transition: transform .5s ease;
 }
 
-.movies-colections:hover {
+.movies-colections img {
+    margin-top: 10px;
+}
+
+.movies-colections img:hover {
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
-    border: 2px solid #fff;
+    border: 3px solid #fff;
     cursor: pointer;
 }
 
@@ -285,7 +301,5 @@ main article.canais .n-g:hover {
 
     border-radius: 4px;
 }
-
-
 
 

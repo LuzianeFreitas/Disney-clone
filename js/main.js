@@ -11,7 +11,8 @@ $(document).ready(function(){
   $('.colection-carousel').slick({
     infinite: false,
     slidesToShow: 5,
-    slidesToScroll: 5
+    slidesToScroll: 5,
+    margin: 10
 
   });
 });
